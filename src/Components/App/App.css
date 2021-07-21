@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  .text-line {
+    font-size: 2em;
+    line-height: 45px;
+  }
+
+  .text-box {
+    width: 80%;
+    padding: 15px 15px 15px 0;
+  }
+}

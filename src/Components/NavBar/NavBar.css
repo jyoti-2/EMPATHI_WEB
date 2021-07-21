@@ -1,0 +1,90 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.nav-left {
+  padding-left: 10px;
+  font-weight: 390;
+  font-size: 30px;
+  font-family: "Noto Sans", sans-serif;
+  color: #dc3545;
+  letter-spacing: 0px;
+  position: relative;
+}
+
+.nav-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+}
+
+.nav-right {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  float: left;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border: #dc3545;
+}
+
+/* .nav-right::after {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  float: right;
+  align-items: flex-end;
+  justify-content: end;
+} */
+.sectionLink {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.sectionLink:hover {
+  text-decoration: underline #dc3545;
+  color: black;
+}
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  display: inline-table;
+  cursor: pointer;
+  margin: 0px;
+  padding-right: 10px;
+  font-weight: 500;
+  color: white;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0px;
+  background: #dc3545;
+  height: 37px;
+}
+
+.bar {
+  background-color: #dc3545;
+  color: white;
+}

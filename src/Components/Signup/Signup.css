@@ -1,0 +1,71 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 100px;
+  width: 600px;
+  height: 1100px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.table-bordered {
+  border: 1px, solid #dc3545 !important;
+}
+.signup-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #dc3545;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-image {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+.submit-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.input-box {
+  padding: 40px;
+}
+
+col:focus {
+  border: 1px #dc3545 !important;
+}
+Form:active {
+  outline: none;
+  border: none;
+}
+Form:focus,
+Form:hover {
+  outline: #dc3545;
+  border: #dc3545;
+}
+.text-container {
+  border-color: #dc3545;
+}
+.text-container:hover {
+  border: 2px solid #dc3545 !important;
+}
+.text-container:active,
+.text-container:focus {
+  border: 2px solid #dc3545 !important;
+}
