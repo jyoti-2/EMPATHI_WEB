@@ -3,17 +3,19 @@ import './Profile.css';
 //import { Link } from "react-scroll";
 import doc from "./../../assets/doc.jpg";
 import { Button } from 'react-bootstrap';
-import NavBar from '../NavBar/NavBar';
+//import NavBar from '../NavBar/NavBar';
 import ProfileCard from '../ProfileCard/ProfileCard';
-import RatingsCard from '../RatingsCard/RatingsCard';
-import StoriesCard from '../StoriesCard/StoriesCard';
-import AppointmentCard from '../AppointmentCard/AppointmentCard';
+//import RatingsCard from '../RatingsCard/RatingsCard';
+//import StoriesCard from '../StoriesCard/StoriesCard';
+//import AppointmentCard from '../AppointmentCard/AppointmentCard';
 
 
 const Profile = () => {
     return (
         <div id="profile" className="profile-container">
-            <NavBar />
+            {/* <NavBar /> */}
+
+            
             <div className="first-container-doc">
                 <div className="doc-profile">
                     <div className="left-container">
