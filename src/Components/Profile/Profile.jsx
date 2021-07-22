@@ -12,7 +12,7 @@ import AppointmentCard from '../AppointmentCard/AppointmentCard';
 class Profile extends React.Component{
     constructor(){
         super();
-        this.state={showProfile:true,
+        this.state={showProfile:false,
                     showRatings:false,
                     showStories:false,
                     showAppointment:false
@@ -69,13 +69,13 @@ class Profile extends React.Component{
                     </div>
                 
             <div className="button-container">
-                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm" className="btn">
+                    <Button onClick={() => this.hideComponent("showAppointment")} variant="danger" size="sm" className="btn">
                         <div className="submit-text">
                         In-person appointment
                         </div>  
                     </Button>
 
-                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm" className="btn">
+                    <Button onClick={() => this.hideComponent("showAppointment")} variant="danger" size="sm" className="btn">
                         <div className="submit-text">
                         Online consultation
                         </div>  
@@ -91,7 +91,7 @@ class Profile extends React.Component{
                 <Button onClick={() => this.hideComponent("showAppointment")} variant="danger"  className="item"><div className="submit-text">Consulted for symptoms</div></Button>
             </div> 
             <div>
-        {showProfile && <ProfileCard />}
+        {showProfile && <ProfileCard/>}
         {showRatings && <RatingsCard />}
         {showStories && <StoriesCard />}
         {showAppointment && <AppointmentCard />}      
