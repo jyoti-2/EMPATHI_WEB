@@ -2,10 +2,8 @@ import React from 'react';
 import HomePage from "./../../assets/HomePage.jpg";
 import { Button } from 'react-bootstrap';
 import './Home.css';
-import NavBar from '../NavBar/NavBar';
+//import NavBar from '../NavBar/NavBar';
 import About from '../About/About';
-//import {Form} from 'react-bootstrap';
-
 
 class Home extends React.Component{
 
@@ -28,7 +26,7 @@ class Home extends React.Component{
         return (
             
             <div id="home" className="landing-container" >
-                <NavBar/>
+                {/* <NavBar/> */}
                 <div className="landing-box">
                     <img
                     src={HomePage}

@@ -1,25 +1,25 @@
 .doctor-container {
   display: flex;
   flex-direction: column;
-  background-color: #d3d3d3;
+  background-color: #eceff1;
   margin: 0px;
   padding: 0px;
 }
 .first-container-doc {
   display: flex;
   flex-direction: row;
-  height: 45vh;
+  height: 50vh;
   justify-content: space-around;
   margin: 0px 20px 0px 20px;
   padding-bottom: 0px;
+  background-color: #eceff1;
 }
 
 .doc-profile {
   display: flex;
   flex-direction: row;
   margin: 15px;
-  background-color: white;
-  
+  background-color: white; 
 }
 
 .doc-profile:focus,
@@ -38,7 +38,7 @@
   flex-direction: row;
   overflow-x: hidden;
   width: 60%;
-  max-height: 400px;
+  max-height: 300px;
   padding: 20px;
 }
 
@@ -48,17 +48,15 @@
   padding: 20px;
 }
 
-.button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.submit-button-doc {
-  border-radius: 200px;
-  height: 60px;
-  padding: 10px;
-  margin: 120px 10px;
-  align-items: center;
+
+.clickable{
+  text-decoration: none;
+  color: black;
+  top:0;
+  left: 0;
+  
+  z-index: 1; 
+ 
 }
 
 .material-icons {
@@ -73,7 +71,7 @@
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
-  direction: ltr;
+  direction: auto;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;

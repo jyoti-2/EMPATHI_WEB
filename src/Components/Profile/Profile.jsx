@@ -5,9 +5,9 @@ import doc from "./../../assets/doc.jpg";
 import { Button } from 'react-bootstrap';
 //import NavBar from '../NavBar/NavBar';
 import ProfileCard from '../ProfileCard/ProfileCard';
-//import RatingsCard from '../RatingsCard/RatingsCard';
-//import StoriesCard from '../StoriesCard/StoriesCard';
-//import AppointmentCard from '../AppointmentCard/AppointmentCard';
+import RatingsCard from '../RatingsCard/RatingsCard';
+import StoriesCard from '../StoriesCard/StoriesCard';
+import AppointmentCard from '../AppointmentCard/AppointmentCard';
 
 
 const Profile = () => {
@@ -15,9 +15,8 @@ const Profile = () => {
         <div id="profile" className="profile-container">
             {/* <NavBar /> */}
 
-            
-            <div className="first-container-doc">
-                <div className="doc-profile">
+            <div className="top-profile">
+                <div className="profile">
                     <div className="left-container">
                         <img
                             src={doc}
@@ -36,16 +35,20 @@ const Profile = () => {
                         <h5> <span class="material-icons">phone </span> +91 9234123457</h5>
                         </div>
                     </div>
-                
 
+                    <div className="patient-card">
+                    <h5> In-person consultation fee: ₹500</h5>
+                    <h5> Overall patient rating: <span class="material-icons"> thumb_up</span><h7> 50 votes</h7></h5>
+                    </div>
+                
                     <div className="button-container">
-                    <Button href= './#/profile/Appointmentcard'  variant="danger" size="sm" className="submit-button-doc">
+                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm">
                         <div className="submit-text">
                         In-person appointment
                         </div>  
                     </Button>
 
-                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm" className="submit-button-doc">
+                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm" >
                         <div className="submit-text">
                         Online consultation
                         </div>  
@@ -55,10 +58,15 @@ const Profile = () => {
 
 
             <div className="top-bar">
+                <Button variant="danger"  className="item"> <div className="submit-text">Profile</div></Button>
+                <Button variant="danger"  className="item"><div className="submit-text">User Card</div></Button>
+                <Button variant="danger"  className="item"><div className="submit-text">Patient Card</div></Button>
+                <Button variant="danger"  className="item"><div className="submit-text">Consulted for symptoms</div></Button>
+{/* 
                 <h4 className= 'item' href = "./#/Profile/ProfileCard"> Profile</h4>
                 <h4 className= 'item' href = "./#/Profile/RatingsCard"> User Card</h4>
                 <h4 className= 'item' href = "./#/Profile/StoriesCard"> Patient Card</h4>
-                <h4 className= 'item' href ="./#/Profile/Appointmentcard"> Consulted for symptoms</h4>
+                <h4 className= 'item' href ="./#/Profile/Appointmentcard"> Consulted for symptoms</h4> */}
             </div>
 
             <ProfileCard/>

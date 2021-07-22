@@ -5,19 +5,15 @@ import {Form, Button, Col} from 'react-bootstrap';
 
 const Login = () => {
   return (
-    
     <div className="login-container">
       <div className="login-header">
       <h1> Login </h1>
-    </div>
+      </div>
       <img
         src={login}
         className='login-image'
         alt=''
       />
-    
-    
-      
       <Form>
         <Form.Row>
           <Form.Group as={Col} controlId="formGridname">
@@ -50,9 +46,9 @@ const Login = () => {
           </Button>
         </div>
       </Form>
+
       <div className="signup-link">
       <p> Don't have an account? <a href = './#/signup'>Sign Up</a></p>
-
       </div>
     </div>
   );
