@@ -7,17 +7,16 @@
 .top-profile{
   display: flex;
   flex-direction: row;
-  height: 50vh;
+  height: 45vh;
   justify-content: space-around;
-  margin: 0px;
+  margin: 10px;
   padding-bottom: 0px;
   background-color: white;
 }
 .profile {
   display: flex;
   flex-direction: row;
-  margin: 10px;
-  
+  margin: 10px;  
 }
 
 .patient-card{
@@ -33,20 +32,23 @@
   justify-content: center;
   padding: 10px;
 }
-
+.btn{
+  margin-bottom: 10px;
+}
 .top-bar {
   display: flex;
   flex-direction: row;
-  background-color: #dc3545;
+  margin: 5px;
+  background-color: white;
   width: 100%;
   height: 100%;
   height: 10vh;
   justify-content: space-around;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: -10px;
 }
 .item{
   width: 100%;
-  margin-block-end: 1px solid white;
-  padding: 15px;
+  padding: 0px;
+  margin: 0%;
 }

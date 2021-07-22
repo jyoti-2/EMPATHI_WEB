@@ -1,6 +1,5 @@
 import React from 'react';
 import './Profile.css';
-//import { Link } from "react-scroll";
 import doc from "./../../assets/doc.jpg";
 import { Button } from 'react-bootstrap';
 //import NavBar from '../NavBar/NavBar';
@@ -10,11 +9,39 @@ import StoriesCard from '../StoriesCard/StoriesCard';
 import AppointmentCard from '../AppointmentCard/AppointmentCard';
 
 
-const Profile = () => {
-    return (
+class Profile extends React.Component{
+    constructor(){
+        super();
+        this.state={showProfile:true,
+                    showRatings:false,
+                    showStories:false,
+                    showAppointment:false
+                };
+        this.hideComponent = this.hideComponent.bind(this);
+    }
+    hideComponent(name) {
+        switch (name) {
+          case "showProfile":
+            this.setState({ showProfile: this.state.showProfile });
+            break;
+          case "showRatings":
+            this.setState({ showRatings: !this.state.showRatings });
+            break;
+          case "showStories":
+            this.setState({ showStories: !this.state.showStories });
+            break;
+          case "showAppointment":
+                this.setState({ showAppointment: !this.state.showAppointment });
+                break;
+          default:
+            <ProfileCard/>
+        }
+      }
+    render() {
+        const { showProfile, showRatings, showStories, showAppointment } = this.state;
+        return(
         <div id="profile" className="profile-container">
             {/* <NavBar /> */}
-
             <div className="top-profile">
                 <div className="profile">
                     <div className="left-container">
@@ -41,14 +68,14 @@ const Profile = () => {
                     <h5> Overall patient rating: <span class="material-icons"> thumb_up</span><h7> 50 votes</h7></h5>
                     </div>
                 
-                    <div className="button-container">
-                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm">
+            <div className="button-container">
+                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm" className="btn">
                         <div className="submit-text">
                         In-person appointment
                         </div>  
                     </Button>
 
-                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm" >
+                    <Button href= './#/profile/Appointmentcard' variant="danger" size="sm" className="btn">
                         <div className="submit-text">
                         Online consultation
                         </div>  
@@ -57,53 +84,21 @@ const Profile = () => {
             </div>
 
 
-            <div className="top-bar">
-                <Button variant="danger"  className="item"> <div className="submit-text">Profile</div></Button>
-                <Button variant="danger"  className="item"><div className="submit-text">User Card</div></Button>
-                <Button variant="danger"  className="item"><div className="submit-text">Patient Card</div></Button>
-                <Button variant="danger"  className="item"><div className="submit-text">Consulted for symptoms</div></Button>
-{/* 
-                <h4 className= 'item' href = "./#/Profile/ProfileCard"> Profile</h4>
-                <h4 className= 'item' href = "./#/Profile/RatingsCard"> User Card</h4>
-                <h4 className= 'item' href = "./#/Profile/StoriesCard"> Patient Card</h4>
-                <h4 className= 'item' href ="./#/Profile/Appointmentcard"> Consulted for symptoms</h4> */}
-            </div>
-
-            <ProfileCard/>
-
-            {/* <Link activeClass="active"
-                            to="profile"
-                            spy={true}
-                            smooth={true}
-                            offset={-90}
-                            duration={1000}>
-            </Link>
-            <Link activeClass="active"
-                            to="Card"
-                            spy={true}
-                            smooth={true}
-                            offset={-90}
-                            duration={1000}>
-            </Link>
-            <Link activeClass="active"
-                            to="Card"
-                            spy={true}
-                            smooth={true}
-                            offset={-90}
-                            duration={1000}>
-            </Link>
-            <Link activeClass="active"
-                            to="symptoms"
-                            spy={true}
-                            smooth={true}
-                            offset={-90}
-                            duration={1000}>
-            </Link> */}      
-           
-            
+             <div className="top-bar">
+                <Button onClick={() => this.hideComponent("showProfile")} variant="danger"  className="item"> <div className="submit-text">Profile</div></Button>
+                <Button onClick={() => this.hideComponent("showRatings")} variant="danger"  className="item"><div className="submit-text">User Card</div></Button>
+                <Button onClick={() => this.hideComponent("showStories")} variant="danger"  className="item"><div className="submit-text">Patient Card</div></Button>
+                <Button onClick={() => this.hideComponent("showAppointment")} variant="danger"  className="item"><div className="submit-text">Consulted for symptoms</div></Button>
+            </div> 
+            <div>
+        {showProfile && <ProfileCard />}
+        {showRatings && <RatingsCard />}
+        {showStories && <StoriesCard />}
+        {showAppointment && <AppointmentCard />}      
+      </div>
         </div>
-        
     );
+    };
 };
 
 export default Profile;
