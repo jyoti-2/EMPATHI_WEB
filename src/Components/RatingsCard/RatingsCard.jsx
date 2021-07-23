@@ -12,7 +12,7 @@ const Ratings = () => {
             alt=''
             className='rating-img'/>
             </div>
-            <div className="left-container-rat">
+            <div className="left-container">
                 <h5><b>Overall ranking  4.5/5 (100 ratings)</b></h5>
                 <p>Overall ranking seem to be good. He has been consistently rated/ranked higher on factors like friendliness etc</p>
                 <br/>
