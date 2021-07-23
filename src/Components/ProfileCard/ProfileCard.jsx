@@ -4,7 +4,7 @@ import './ProfileCard.css';
 const ProfileCard = () => {
     return (
         <div className="profilecard-container" id = "profile">
-            <h1> Profile card </h1>
+            <h3> About Dr Amola </h3>
         </div>
     );
 };
