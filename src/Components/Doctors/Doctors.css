@@ -2,23 +2,23 @@
   display: flex;
   flex-direction: column;
   background-color: #eceff1;
-  margin: 0px;
+  margin-top: 65px;
   padding: 0px;
 }
 .first-container-doc {
   display: flex;
   flex-direction: row;
-  height: 50vh;
-  justify-content: space-around;
-  margin: 0px 20px 0px 20px;
-  padding-bottom: 0px;
+  height: 40vh;
+  justify-content: space-evenly;
+  margin: 0px 10px 0px 0px;
+  margin-bottom: 50px;
   background-color: #eceff1;
 }
 
 .doc-profile {
   display: flex;
   flex-direction: row;
-  margin: 15px;
+  margin: 10px;
   background-color: white; 
 }
 
@@ -37,24 +37,24 @@
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
-  width: 60%;
-  max-height: 300px;
-  padding: 20px;
+  width: 50%;
+  max-height: 200px;
+  padding: 5px;
 }
 
 .right-container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
 }
 
 
 .clickable{
+  position: relative;
   text-decoration: none;
   color: black;
   top:0;
   left: 0;
-  
   z-index: 1; 
  
 }

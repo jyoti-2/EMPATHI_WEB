@@ -2,7 +2,7 @@ import React from 'react';
 import './Profile.css';
 import doc from "./../../assets/doc.jpg";
 import { Button } from 'react-bootstrap';
-//import NavBar from '../NavBar/NavBar';
+import NavBar from '../NavBar/NavBar';
 import ProfileCard from '../ProfileCard/ProfileCard';
 import RatingsCard from '../RatingsCard/RatingsCard';
 import StoriesCard from '../StoriesCard/StoriesCard';
@@ -41,7 +41,7 @@ class Profile extends React.Component{
         const { showProfile, showRatings, showStories, showAppointment } = this.state;
         return(
         <div id="profile" className="profile-container">
-            {/* <NavBar /> */}
+           <NavBar />
             <div className="top-profile">
                 <div className="profile">
                     <div className="left-container">

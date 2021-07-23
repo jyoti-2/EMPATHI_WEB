@@ -2,8 +2,6 @@ import React from 'react';
 // import logo from "./../../assets/logo.png";
 import './NavBar.css';
 import { Navbar, InputGroup, FormControl, Button, Form} from 'react-bootstrap';
-import {Link} from "react-scroll";
-//import { AiOutlineSearch } from 'react-icons/ai';
 class NavBar extends React.Component{
 
     render() {
