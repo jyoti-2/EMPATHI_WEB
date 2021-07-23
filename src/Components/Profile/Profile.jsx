@@ -22,7 +22,7 @@ class Profile extends React.Component{
     hideComponent(name) {
         switch (name) {
           case "showProfile":
-            this.setState({ showProfile: this.state.showProfile });
+            this.setState({ showProfile: !this.state.showProfile });
             break;
           case "showRatings":
             this.setState({ showRatings: !this.state.showRatings });
