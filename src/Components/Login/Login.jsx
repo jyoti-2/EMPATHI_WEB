@@ -15,7 +15,6 @@ const Login = () => {
         alt=''
       />
       <Form>
-        <Form.Row>
           <Form.Group as={Col} controlId="formGridname">
             <Form.Label size="lg"> First name </Form.Label>
             <Form.Control size="lg" placeholder="First name" className="text-container" />
@@ -26,7 +25,6 @@ const Login = () => {
             <Form.Control size="lg" placeholder="Last name" className="text-container"/>
           </Form.Group>
                     
-        </Form.Row>
                 
         <Form.Group controlId="formBasicEmail">
           <Form.Label size="lg" >Mobile Number</Form.Label>
