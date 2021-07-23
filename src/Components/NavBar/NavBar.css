@@ -1,3 +1,4 @@
+
 .navbar-container {
   display: flex;
   flex-direction: row;
@@ -38,14 +39,13 @@
   border: #dc3545;
 }
 
-/* .nav-right::after {
-  display: flex;
-  flex-direction: column;
-  margin-right: auto;
-  float: right;
-  align-items: flex-end;
-  justify-content: end;
-} */
+.text-container{
+  height: 38px;
+}
+.find-doctor{
+  height: 38px;
+  margin: 0px 5px;
+}
 .sectionLink {
   display: flex;
   flex-direction: row;

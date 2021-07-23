@@ -49,7 +49,6 @@ class Profile extends React.Component{
                             src={doc}
                             alt=''
                             className='doc-img'
-                            href='./#/profile'
                         />
                         {/* <span class="material-icons"> thumb_up_off_alt thumb_down_off_alt </span> */}
                     </div>
