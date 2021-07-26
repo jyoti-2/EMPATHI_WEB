@@ -7,12 +7,10 @@ import ProfileCard from '../ProfileCard/ProfileCard';
 import RatingsCard from '../RatingsCard/RatingsCard';
 import StoriesCard from '../StoriesCard/StoriesCard';
 import AppointmentCard from '../AppointmentCard/AppointmentCard';
-
-
 class Profile extends React.Component{
     constructor(){
         super();
-        this.state={showProfile:false,
+        this.state={
                     showRatings:false,
                     showStories:false,
                     showAppointment:false
@@ -21,9 +19,7 @@ class Profile extends React.Component{
     }
     hideComponent(name) {
         switch (name) {
-          case "showProfile":
-            this.setState({ showProfile: !this.state.showProfile });
-            break;
+         
           case "showRatings":
             this.setState({ showRatings: !this.state.showRatings });
             break;
@@ -37,66 +33,60 @@ class Profile extends React.Component{
             <ProfileCard/>
         }
       }
+
+      
+
     render() {
-        const { showProfile, showRatings, showStories, showAppointment } = this.state;
+        const {  showRatings, showStories, showAppointment } = this.state;
+ 
         return(
         <div id="profile" className="profile-container">
            <NavBar />
             <div className="top-profile">
-                <div className="profile">
-                    <div className="left-container">
+                    <div className="top-icons">
+                    <span class="material-icons">file_download</span>
+                    <span class="material-icons">favorite_border</span>
+                    </div>
+
+                    <div className="img-container">
                         <img
                             src={doc}
                             alt=''
-                            className='doc-img'
+                            className='img-cont'
                         />
-                        {/* <span class="material-icons"> thumb_up_off_alt thumb_down_off_alt </span> */}
-                    </div>
-                    
-                    <div className="right-container">
-                        <h3> Dr Amola Kumari, M.D</h3><br/>
-                        <h5>Orthopaedic surgeon | 12 Yrs Exp.</h5>
-                        <h5> <b>Practice Area:</b>Ankle sprain, Foot pain</h5>
-                        <h5> <span class="material-icons"> location_on </span> Old Palasia, Indore | Paras Hospital</h5>
-                        <h5> <span class="material-icons">phone </span> +91 9234123457</h5>
-                        </div>
+                        <Button onClick={() => this.hideComponent("showAppointment")} variant="danger" size="sm" className="btns">
+                        <div className="submit-text">Write a Review</div>  
+                        </Button>
                     </div>
 
-                    <div className="patient-card">
-                    <h5> In-person consultation fee: ₹500</h5>
-                    <h5> Overall patient rating: <span class="material-icons"> thumb_up</span><h7> 50 votes</h7></h5>
+                    <div className="center-container">
+                        <h4> Dr Amola Kumari, M.D</h4>
+                        <p>Orthopaedic surgeon | 12 Yrs Exp.</p>
+                        <p> <b>Practice Area:</b> Ankle sprain, Foot pain</p>
+                        <div className="icon"><span class="material-icons"> location_on </span> <p> Old Palasia, Indore | Paras Hospital</p></div>
+                        <div className="icon"><span class="material-icons">phone </span><p> +91 9234123457</p></div>
                     </div>
-                
-            <div className="button-container">
-                    <Button onClick={() => this.hideComponent("showAppointment")} variant="danger" size="sm" className="btn">
-                        <div className="submit-text">
-                        In-person appointment
-                        </div>  
-                    </Button>
 
-                    <Button onClick={() => this.hideComponent("showAppointment")} variant="danger" size="sm" className="btn">
-                        <div className="submit-text">
-                        Online consultation
-                        </div>  
-                    </Button>
-            </div>
+                    <div className="desc">
+                    <p>Dr. Amola Kumar is an Orthopedics and Joint replacement Surgeon in Indore having more than 10 years of experience in the field of Orthopaedic surgery. She completed his Six years of Orthopaedic training from prestigious All India Institute of Medical Sciences (AIIMS), New Delhi . Dr. Kumar specializes in Knee & Hip Replacement, Computer navigated TKR, Arthroscopic Knee surgery & Complex Fractures. He has experience of performing more than 2000 knee replacement till date</p>
+                    </div>
             </div>
 
-
-             <div className="top-bar">
-                <Button onClick={() => this.hideComponent("showProfile")} variant="danger"  className="item"> <div className="submit-text">Profile</div></Button>
-                <Button onClick={() => this.hideComponent("showRatings")} variant="danger"  className="item"><div className="submit-text">User Card</div></Button>
-                <Button onClick={() => this.hideComponent("showStories")} variant="danger"  className="item"><div className="submit-text">Patient Card</div></Button>
-                <Button onClick={() => this.hideComponent("showAppointment")} variant="danger"  className="item"><div className="submit-text">Consulted for symptoms</div></Button>
+                <div className="top-bar">
+               
+                <Button onClick={() => this.hideComponent("showRatings")} variant="danger"  className="item"><div className="submit-text">Patient Ratings</div></Button>
+                <Button onClick={() => this.hideComponent("showStories")} variant="danger"  className="item"><div className="submit-text">Patient Reviews</div></Button>
+                <Button onClick={() => this.hideComponent("showAppointment")} variant="danger"  className="item"><div className="submit-text">Book an appointment</div></Button>
             </div> 
             <div>
-        {showProfile && <ProfileCard/>}
+        
+       
         {showRatings && <RatingsCard />}
         {showStories && <StoriesCard />}
         {showAppointment && <AppointmentCard />}      
       </div>
         </div>
-    );
+       );
     };
 };
 

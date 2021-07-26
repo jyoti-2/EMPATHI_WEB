@@ -1,6 +1,7 @@
 .rating-container{
     display: inline-block;
-    margin: 40px;
+    margin: 40px 60px;
+    border-radius: 20px;
     background-color: white;
 }
 .right-container{
