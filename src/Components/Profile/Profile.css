@@ -46,15 +46,54 @@
     padding-left: 40px;
     margin-top: 30px;
 }
-
-.desc{
+.desc-container{
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
   padding-left: 40px;
   width: 50%;
+}
+.desc{
+ 
   letter-spacing: 0.5;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col-one{
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  float: left;
+  width: 16%;
+  
+  
+}
+
+.col-two{
+ 
+  flex-direction: column;
+  height: 70px;
+  display: inline-block;
+
+width: 16%;
+ 
+}
+
+.col-three{
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  float: right;
+}
+
+.txt{
+  line-height: 0.5;
 }
 
 .btns{
@@ -84,7 +123,7 @@
   border-radius: 20px;
 }
 
-.item:hover{
+.item:hover:in-range{
   background-color: white;
   color: black;
 }

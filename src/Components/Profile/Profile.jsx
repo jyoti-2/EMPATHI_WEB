@@ -67,9 +67,28 @@ class Profile extends React.Component{
                         <div className="icon"><span class="material-icons">phone </span><p> +91 9234123457</p></div>
                     </div>
 
-                    <div className="desc">
-                    <p>Dr. Amola Kumar is an Orthopedics and Joint replacement Surgeon in Indore having more than 10 years of experience in the field of Orthopaedic surgery. She completed his Six years of Orthopaedic training from prestigious All India Institute of Medical Sciences (AIIMS), New Delhi . Dr. Kumar specializes in Knee & Hip Replacement, Computer navigated TKR, Arthroscopic Knee surgery & Complex Fractures. He has experience of performing more than 2000 knee replacement till date</p>
-                    </div>
+                    <div className="desc-container">
+                    <p className="desc">Dr. Amola Kumar is an Orthopedics and Joint replacement Surgeon in Indore having more than 10 years of experience in the field of Orthopaedic surgery. She completed his Six years of Orthopaedic training from prestigious All India Institute of Medical Sciences (AIIMS), New Delhi . Dr. Kumar specializes in Knee & Hip Replacement, Computer navigated TKR, Arthroscopic Knee surgery & Complex Fractures. He has experience of performing more than 2000 knee replacement till date</p>
+                    
+                    <div className="row">
+                        <div className="col-one">
+                            <h6>Hospital</h6>
+                            <p> XYZ Hospital, HP Avenue Old palasia Indore
+                            (9:00 AM - 5:00 PM)</p>
+                        </div>
+
+
+                        <div className="col-two">
+                        <h6> Education </h6>
+                            <p>AIMS Delhi</p>
+                        </div>
+
+                        <div className="col-three">
+                            <h6> Pricing </h6>
+                            <p> ₹500 per session</p>
+                       </div>
+                   </div>
+                </div>
             </div>
 
                 <div className="top-bar">

@@ -13,15 +13,6 @@
   padding: 0px;
 
 }
-/* .first-container-doc {
-  display: flex;
-  flex-direction: row;
-  height: 40vh;
-  justify-content: space-evenly;
-  margin: 0px 10px 0px 0px;
-  margin-bottom: 50px;
-  background-color: #ffe1e5;
-} */
 
 .doc-profile {
   display: flex;
@@ -74,19 +65,13 @@
   margin-right: 60px;
 }
 
-h4{
-  line-height: 1 !important;
-}
-
-p{
-  line-height: 1 !important;
-}
-
 .icon{
   display: flex;
   flex-direction: row;
 }
-
+.head{
+  line-height: 1;
+}
 .clickable{
   position: relative;
   text-decoration: none;
