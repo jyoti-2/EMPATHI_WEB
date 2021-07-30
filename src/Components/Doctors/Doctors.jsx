@@ -13,7 +13,7 @@ const Doctors = () => {
                     <div className="doc-profile">
 
                     <div className="top-icon">
-                    <span class="material-icons">file_download</span>
+                    <span class="material-icons">ios_share</span>
                     <span class="material-icons">favorite_border</span>
                     </div>
 
@@ -23,7 +23,7 @@ const Doctors = () => {
                             alt=''
                             className='doc-img'
                         />
-                        <p> Ratings: <b> 4 </b> (on the scale of 5)</p>
+                        <p> 40 ratings <b> 4/5 </b> </p>
                     </div>
 
                     <div className="right-container">
@@ -31,7 +31,7 @@ const Doctors = () => {
                         <p  className='head'>Orthopaedic surgeon | 12 Yrs Exp.</p>
                         <p  className='head'> <b>Practice Area:</b> Ankle sprain, Foot pain</p>
                         <div className="icon"><span class="material-icons"> location_on </span> <p className='head'> Old Palasia, Indore | Paras Hospital</p></div>
-                        <div className="icon"><span class="material-icons">phone </span><p  className='head'> +91 9234123457</p></div>
+                        <p  className='head'> ₹500 Consultation fee at clinic</p>
                     </div>
                 </div>  
             </a>
@@ -40,7 +40,7 @@ const Doctors = () => {
                     <div className="doc-profile">
 
                     <div className="top-icon">
-                    <span class="material-icons">file_download</span>
+                    <span class="material-icons">ios_share</span>
                     <span class="material-icons">favorite_border</span>
                     </div>
 
@@ -50,7 +50,7 @@ const Doctors = () => {
                             alt=''
                             className='doc-img'
                         />
-                        <p> Ratings: <b> 4 </b> (on the scale of 5)</p>
+                        <p> 60 ratings <b> 4.2/5 </b></p>
                     </div>
 
                     <div className="right-container">
@@ -58,7 +58,7 @@ const Doctors = () => {
                         <p  className='head'>Orthopaedic surgeon | 12 Yrs Exp.</p>
                         <p  className='head'> <b>Practice Area:</b> Ankle sprain, Foot pain</p>
                         <div className="icon"><span class="material-icons"> location_on </span> <p className='head'> Old Palasia, Indore | Paras Hospital</p></div>
-                        <div className="icon"><span class="material-icons">phone </span><p  className='head'> +91 9234123457</p></div>
+                        <p  className='head'> ₹500 Consultation fee at clinic</p>
                     </div>
                 </div>  
             </a>
@@ -67,7 +67,7 @@ const Doctors = () => {
                     <div className="doc-profile">
 
                     <div className="top-icon">
-                    <span class="material-icons">file_download</span>
+                    <span class="material-icons">ios_share</span>
                     <span class="material-icons">favorite_border</span>
                     </div>
 
@@ -77,7 +77,7 @@ const Doctors = () => {
                             alt=''
                             className='doc-img'
                         />
-                        <p> Ratings: <b> 4 </b> (on the scale of 5)</p>
+                        <p> 120 ratings <b> 3/5 </b></p>
                     </div>
 
                     <div className="right-container">
@@ -85,7 +85,7 @@ const Doctors = () => {
                         <p  className='head'>Orthopaedic surgeon | 12 Yrs Exp.</p>
                         <p  className='head'> <b>Practice Area:</b> Ankle sprain, Foot pain</p>
                         <div className="icon"><span class="material-icons"> location_on </span> <p className='head'> Old Palasia, Indore | Paras Hospital</p></div>
-                        <div className="icon"><span class="material-icons">phone </span><p  className='head'> +91 9234123457</p></div>
+                        <p  className='head'> ₹500 Consultation fee at clinic</p>
                     </div>
                 </div>  
             </a>
@@ -94,7 +94,7 @@ const Doctors = () => {
                     <div className="doc-profile">
 
                     <div className="top-icon">
-                    <span class="material-icons">file_download</span>
+                    <span class="material-icons">ios_share</span>
                     <span class="material-icons">favorite_border</span>
                     </div>
 
@@ -104,7 +104,7 @@ const Doctors = () => {
                             alt=''
                             className='doc-img'
                         />
-                        <p> Ratings: <b> 4 </b> (on the scale of 5)</p>
+                        <p> 50 ratings <b> 4.7/5 </b></p>
                     </div>
 
                     <div className="right-container">
@@ -112,7 +112,7 @@ const Doctors = () => {
                         <p  className='head'>Orthopaedic surgeon | 12 Yrs Exp.</p>
                         <p  className='head'> <b>Practice Area:</b> Ankle sprain, Foot pain</p>
                         <div className="icon"><span class="material-icons"> location_on </span> <p className='head'> Old Palasia, Indore | Paras Hospital</p></div>
-                        <div className="icon"><span class="material-icons">phone </span><p  className='head'> +91 9234123457</p></div>
+                       <p  className='head'> ₹500 Consultation fee at clinic</p>
                     </div>
                 </div>  
             </a>
@@ -121,7 +121,7 @@ const Doctors = () => {
                     <div className="doc-profile">
 
                     <div className="top-icon">
-                    <span class="material-icons">file_download</span>
+                    <span class="material-icons">ios_share</span>
                     <span class="material-icons">favorite_border</span>
                     </div>
 
@@ -131,7 +131,8 @@ const Doctors = () => {
                             alt=''
                             className='doc-img'
                         />
-                        <p> Ratings: <b> 4 </b> (on the scale of 5)</p>
+                    <p> 50 ratings <b> 4.7/5 </b></p>
+
                     </div>
 
                     <div className="right-container">
@@ -139,7 +140,7 @@ const Doctors = () => {
                         <p  className='head'>Orthopaedic surgeon | 12 Yrs Exp.</p>
                         <p  className='head'> <b>Practice Area:</b> Ankle sprain, Foot pain</p>
                         <div className="icon"><span class="material-icons"> location_on </span> <p className='head'> Old Palasia, Indore | Paras Hospital</p></div>
-                        <div className="icon"><span class="material-icons">phone </span><p  className='head'> +91 9234123457</p></div>
+                        <p  className='head'> ₹500 Consultation fee at clinic</p>
                     </div>
                 </div>  
             </a>
@@ -147,7 +148,7 @@ const Doctors = () => {
                     <div className="doc-profile">
 
                     <div className="top-icon">
-                    <span class="material-icons">file_download</span>
+                    <span class="material-icons">ios_share</span>
                     <span class="material-icons">favorite_border</span>
                     </div>
 
@@ -157,7 +158,8 @@ const Doctors = () => {
                             alt=''
                             className='doc-img'
                         />
-                        <p> Ratings: <b> 4 </b> (on the scale of 5)</p>
+                    <p> 50 ratings <b> 4.7/5 </b></p>
+
                     </div>
 
                     <div className="right-container">
@@ -165,7 +167,7 @@ const Doctors = () => {
                         <p  className='head'>Orthopaedic surgeon | 12 Yrs Exp.</p>
                         <p  className='head'> <b>Practice Area:</b> Ankle sprain, Foot pain</p>
                         <div className="icon"><span class="material-icons"> location_on </span> <p className='head'> Old Palasia, Indore | Paras Hospital</p></div>
-                        <div className="icon"><span class="material-icons">phone </span><p  className='head'> +91 9234123457</p></div>
+                        <p  className='head'> ₹500 Consultation fee at clinic</p>
                     </div>
                 </div>  
             </a>

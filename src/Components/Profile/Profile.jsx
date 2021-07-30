@@ -44,7 +44,7 @@ class Profile extends React.Component{
            <NavBar />
             <div className="top-profile">
                     <div className="top-icons">
-                    <span class="material-icons">file_download</span>
+                    <span class="material-icons">ios_share</span>
                     <span class="material-icons">favorite_border</span>
                     </div>
 
@@ -55,7 +55,7 @@ class Profile extends React.Component{
                             className='img-cont'
                         />
                         <Button onClick={() => this.hideComponent("showAppointment")} variant="danger" size="sm" className="btns">
-                        <div className="submit-text">Write a Review</div>  
+                        <div className="submit-text">Rate this doctor</div>  
                         </Button>
                     </div>
 
@@ -80,7 +80,7 @@ class Profile extends React.Component{
 
                         <div className="col-two">
                         <h6> Education </h6>
-                            <p>AIMS Delhi</p>
+                            <p>AIMS Delhi | AIMS Patna</p>
                         </div>
 
                         <div className="col-three">
@@ -93,9 +93,9 @@ class Profile extends React.Component{
 
                 <div className="top-bar">
                
-                <Button onClick={() => this.hideComponent("showRatings")} variant="danger"  className="item"><div className="submit-text">Patient Ratings</div></Button>
-                <Button onClick={() => this.hideComponent("showStories")} variant="danger"  className="item"><div className="submit-text">Patient Reviews</div></Button>
-                <Button onClick={() => this.hideComponent("showAppointment")} variant="danger"  className="item"><div className="submit-text">Book an appointment</div></Button>
+                <Button onClick={() => this.hideComponent("showRatings")} variant="danger" className="item-prof"><div className="submit-text">Patient Ratings</div></Button>
+                <Button onClick={() => this.hideComponent("showStories")} variant="danger" className="item-prof"><div className="submit-text">Patient Reviews</div></Button>
+                <Button onClick={() => this.hideComponent("showAppointment")} variant="danger" className="item-prof"><div className="submit-text">Book an appointment</div></Button>
             </div> 
             <div>
         
